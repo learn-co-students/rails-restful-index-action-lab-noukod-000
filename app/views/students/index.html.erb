@@ -1,0 +1,10 @@
+<ul>
+  <li>First name</li>
+  <li>Last name</li>
+  <% @students.each do |etu| %>
+  <ul>
+    <li><%= etu.first_name %></li>
+    <li><%= etu.last_name %></li>
+  </ul>
+  <%end%>
+</ul>
