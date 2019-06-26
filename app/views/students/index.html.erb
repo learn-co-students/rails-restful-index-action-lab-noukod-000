@@ -1,0 +1,15 @@
+<!-- <% Student.all.each do |student| %>
+  <%= student.to_s %>
+<% end %> -->
+
+
+<table>
+  <th>First name</th>
+  <th>Last name</th>
+  <% @students.each do |s| %>
+  <tr>
+    <td><%= s.first_name %></td>
+    <td><%= s.last_name %></td>
+  </tr>
+  <%end%>
+</table>
